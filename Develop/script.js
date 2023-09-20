@@ -10,8 +10,8 @@ $(function () {
   console.log (currentDay);
   
   var currentTime = dayjs(); // Get the current time
-  var formattedTime = currentTime.format('h:mm:ss A'); // Format the time
-  console.log(formattedTime); // Output: 2:30:45 PM
+  var formattedTime = currentTime.format('h:mm:ss A'); 
+  console.log(formattedTime); 
 });
 
 
@@ -22,33 +22,34 @@ $(function () {
   // time-block containing the button that was clicked? How might the id be
   // useful when saving the description in local storage?
 
-    // jQuery event listener
+  $(document).ready(function() {
     $('button').on('click', function() {
+      console.log("enter")
     //variable for text area class
-    var formData= $(".col-8.col-md-10.description");
-    console.log('formData', formData);
+    var textArea= $(".col-8.col-md-10.description");
     //select the text area elements and make an empty array  
-    var formDataValue = [];
+    var textAreaValue = [];
     //Iterate text area elements with .each()
-    $(formData).each(function() {
-   //variable using $(this) to reference formData elements
+    $(textArea).each(function() {
+   //variable using $(this) to reference textArea elements
       var value = $(this).val();
-    //push each text area form into an formData array
-      formDataValue.push(value);
+    //push each text area form into an textAreaValue array
+      textAreaValue.push(value);
     });
     //push the array and store into local storage make a string
-    localStorage.setItem("formDataValues", JSON.stringify(formDataValue));
+    localStorage.setItem("formDataValues", JSON.stringify(textAreaValue));
   });
+ });
 
   // TODO: Add code to get any user input that was saved in localStorage and set
   // the values of the corresponding textarea elements. HINT: How can the id
   // attribute of each time-block be used to do this?
 
-    //To get data from local storage?
-    var formDataArr = JSON.parse(localStorage.getItem(formDataValue));
+    // //To get data from local storage?
+    // var formDataArr = JSON.parse(localStorage.getItem(formDataValue));
    
-    //////OR val method?
-    $('#hour-9').val(localStorage.getItem(".col-8.col-md-10.description"));
+    // //////OR val method?
+    // $('#hour-9').val(localStorage.getItem(".col-8.col-md-10.description"));
 
     // $('#hour-9');// hour-9 or id
 
