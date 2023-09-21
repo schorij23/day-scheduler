@@ -54,9 +54,17 @@ $(function () {
   // past, present, and future classes? How can Day.js be used to get the
   // current hour in 24-hour time?
   //
-  
+    // gets the current hour between 0-23 (commented out part)
       var now = dayjs();
-      var hourNow = now.hour();
-      console.log (hourNow);
+      // var hourNow = now.hour();
+      // console.log (hourNow);
+
+      if ($('#') === now.hour()) {
+        //code here for class "row time-block present" (red);
+      } else if ($('#') < now.hour()) {
+        //code here for class "row time-block past" (grey);
+      } else {
+        //code here for class "row time-block future" (green);
+      }
   
   
