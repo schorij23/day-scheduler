@@ -28,7 +28,7 @@ $(function () {
   // Variable now to use dayjs
     var now = dayjs();
   //Iterates numerically from 9 to 17
-    for(let i=9; i<=17; i++){
+    for(let i = 9; i <= 17; i++){
   // Get the ID of the textarea element.
     var hour = "hour-"+ i
   // Get the value of the textarea element from local storage.
