@@ -29,5 +29,6 @@ THEN the saved events persist
 https://schorij23.github.io/day-scheduler/
 
 This Screenshot was taken at 3PM
-![Screenshot 2023-09-23 at 15-48-55 Work Day Scheduler](https://github.com/schorij23/day-scheduler/assets/5600528/a227656a-723a-45d3-8685-dbaadc11fca9)
+![Screenshot 2023-09-23 at 15-57-56 Work Day Scheduler](https://github.com/schorij23/day-scheduler/assets/5600528/a570bb0a-ce1a-4150-8e58-417932d23a85)
+
 
