@@ -27,3 +27,5 @@ THEN the saved events persist
 ```
 
 https://schorij23.github.io/day-scheduler/
+![Screenshot 2023-09-23 at 15-48-55 Work Day Scheduler](https://github.com/schorij23/day-scheduler/assets/5600528/a227656a-723a-45d3-8685-dbaadc11fca9)
+
